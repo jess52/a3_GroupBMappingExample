@@ -1,16 +1,29 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="UTF-8">
-	<title>Simple Mapping Example</title>
-	<link rel="stylesheet" type="text/css" href="css/main.css">
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAATudw3s2PtjUhIVy5UJAMAC9ppT2BKpE"></script>
-</head>
-<body>
 
-<h4>Google Maps and Geolocation</h4>
-	<!--Set up the html file for the Google Maps API-->
-	<div class="map-wrapper"></div>
-	<script src="js/main.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Mapping Example</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAATudw3s2PtjUhIVy5UJAMAC9ppT2BKpE"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <h4>Google Maps and Geolocation</h4>
+    <!--Set up the html file for the Google Maps API-->
+
+    <div class="preload-wrapper">
+        <i class="fa fa-spinner fa-spin"></i>
+        <span>loading map, please wait...</span>
+    </div>
+        <div class="map-wrapper"></div>
+
+		<h4 class="heocode-header">	Using the GeoCode..API</h4>
+		<input type="texbox" class="address"></input>
+		<button class="geocode">Code Address!</button>
+
+    <script src="js/main.js"></script>
 </body>
+
 </html>
